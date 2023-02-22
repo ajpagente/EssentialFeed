@@ -78,7 +78,7 @@ class CacheFeedUseCaseTests: XCTestCase {
     
     func test_save_requestsCacheDeletion() {
         let (sut, store) = makeSUT()
-        let items = [uniqueItems(), uniqueItems()]
+        let items = [uniqueItem(), uniqueItem()]
         
         sut.save(items) { _ in }
         
@@ -87,7 +87,7 @@ class CacheFeedUseCaseTests: XCTestCase {
     
     func test_save_doesNotRequestCacheInsertionOnDeletionError() {
         let (sut, store) = makeSUT()
-        let items = [uniqueItems(), uniqueItems()]
+        let items = [uniqueItem(), uniqueItem()]
         let deletionError = anyNSError()
         
         sut.save(items) { _ in }
@@ -99,7 +99,7 @@ class CacheFeedUseCaseTests: XCTestCase {
     func test_save_requestsNewCacheInsertionsWithTimestampOnSuccessfulDeletion() {
         let timestamp = Date()
         let (sut, store) = makeSUT(currentDate: { timestamp })
-        let items = [uniqueItems(), uniqueItems()]
+        let items = [uniqueItem(), uniqueItem()]
         
         sut.save(items) { _ in }
         store.completeDeletionSuccessfully()
@@ -110,7 +110,7 @@ class CacheFeedUseCaseTests: XCTestCase {
     func test_save_failsOnDeletionError() {
         let (sut, store) = makeSUT()
         let deletionError = anyNSError()
-        let items = [uniqueItems(), uniqueItems()]
+        let items = [uniqueItem(), uniqueItem()]
         let exp = expectation(description: "Wait for save completion")
         
         var receivedError: Error?
@@ -128,7 +128,7 @@ class CacheFeedUseCaseTests: XCTestCase {
     func test_save_failsOnInsertionError() {
         let (sut, store) = makeSUT()
         let insertionError = anyNSError()
-        let items = [uniqueItems(), uniqueItems()]
+        let items = [uniqueItem(), uniqueItem()]
         let exp = expectation(description: "Wait for save completion")
         
         var receivedError: Error?
@@ -146,7 +146,7 @@ class CacheFeedUseCaseTests: XCTestCase {
     
     func test_save_succeedsOnSuccessfulCacheInsertion() {
         let (sut, store) = makeSUT()
-        let items = [uniqueItems(), uniqueItems()]
+        let items = [uniqueItem(), uniqueItem()]
         let exp = expectation(description: "Wait for save completion")
         
         var receivedError: Error?
@@ -174,7 +174,7 @@ class CacheFeedUseCaseTests: XCTestCase {
         return (sut, store)
     }
     
-    private func uniqueItems() -> FeedItem {
+    private func uniqueItem() -> FeedItem {
         return FeedItem(id: UUID(), description: "any", location: "any", imageURL: anyURL())
     }
     

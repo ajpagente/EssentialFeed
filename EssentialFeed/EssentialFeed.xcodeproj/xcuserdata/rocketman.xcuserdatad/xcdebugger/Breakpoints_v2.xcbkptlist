@@ -7,17 +7,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "357EDCD2-746E-4451-86C5-CEC5FD9F3D07"
+            uuid = "526FB32C-CE79-4141-B06A-3F1CA7F9AC34"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EssentialFeedTests/Feed Cache/CacheFeedUseCaseTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "test_save_doesNotDeliverDeletionErrorAfterSUTInstanceHasBeenDeallocated()"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "test_save_doesNotDeliverInsertionErrorAfterSUTInstanceHasBeenDeallocated()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "526FB32C-CE79-4141-B06A-3F1CA7F9AC34 - d9fe7cc51d9183ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EssentialFeedTests.CacheFeedUseCaseTests.test_save_doesNotDeliverInsertionErrorAfterSUTInstanceHasBeenDeallocated() -&gt; ()"
+                  moduleName = "EssentialFeedTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rocketman/Documents/essentialdeveloper/EssentialFeed/EssentialFeed/EssentialFeedTests/Feed%20Cache/CacheFeedUseCaseTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  uuid = "526FB32C-CE79-4141-B06A-3F1CA7F9AC34 - d9fe7cc51d9183ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EssentialFeedTests.CacheFeedUseCaseTests.test_save_doesNotDeliverInsertionErrorAfterSUTInstanceHasBeenDeallocated() -&gt; ()"
+                  moduleName = "EssentialFeedTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rocketman/Documents/essentialdeveloper/EssentialFeed/EssentialFeed/EssentialFeedTests/Feed%20Cache/CacheFeedUseCaseTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "428">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

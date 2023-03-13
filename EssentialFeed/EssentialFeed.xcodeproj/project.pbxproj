@@ -46,6 +46,7 @@
 		B5CB233329B49671002044C5 /* ManagedFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CB233229B49671002044C5 /* ManagedFeedImage.swift */; };
 		B5E80F2A29BDD628004981ED /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E80F2229BDD628004981ED /* EssentialFeediOS.framework */; };
 		B5E80F3929BEEB3F004981ED /* FeedViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E80F3729BEEB3F004981ED /* FeedViewControllerTests.swift */; };
+		B5E80F3B29BF45A8004981ED /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57EBCF0298BFD99000F6507 /* EssentialFeed.framework */; platformFilter = ios; };
 		B5F4B0D029B58ADA00DF6CD3 /* EssentialFeedCacheIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4B0CF29B58ADA00DF6CD3 /* EssentialFeedCacheIntegrationTests.swift */; };
 		B5F4B0D129B58ADA00DF6CD3 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B57EBCF0298BFD99000F6507 /* EssentialFeed.framework */; };
 		B5F4B0D729B58CA000DF6CD3 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57EBD25299A57E9000F6507 /* XCTestCase+MemoryLeakTracking.swift */; };
@@ -157,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E80F3B29BF45A8004981ED /* EssentialFeed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +238,7 @@
 				B5E80F2329BDD628004981ED /* EssentialFeediOS */,
 				B5E80F2D29BDD628004981ED /* EssentialFeediOSTests */,
 				B57EBCF1298BFD99000F6507 /* Products */,
+				B5E80F3A29BF45A8004981ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -361,6 +364,13 @@
 				B5E80F3729BEEB3F004981ED /* FeedViewControllerTests.swift */,
 			);
 			path = EssentialFeediOSTests;
+			sourceTree = "<group>";
+		};
+		B5E80F3A29BF45A8004981ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B5F4B0CE29B58ADA00DF6CD3 /* EssentialFeedCacheIntegrationTests */ = {

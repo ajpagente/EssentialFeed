@@ -7,10 +7,6 @@
 
 import Foundation
 
-public struct FeedViewModel {
-    public let feed: [FeedImage]
-}
-
 public protocol FeedView {
     func display(_ viewModel: FeedViewModel)
 }
@@ -58,7 +54,6 @@ public final class FeedPresenter {
             comment: "Title for the feed view")
     }
 
-    
     public init(feedView: FeedView, loadingView: FeedLoadingView, errorView: FeedErrorView) {
         self.feedView = feedView
         self.loadingView = loadingView

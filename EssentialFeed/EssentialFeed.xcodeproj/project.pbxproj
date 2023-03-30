@@ -293,13 +293,6 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		B54A5D4C29CA97C8008AC657 /* Feed Presentation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Feed Presentation";
-			sourceTree = "<group>";
-		};
 		B5650C7E29B219E500CF391E /* FeedStoreSpecs */ = {
 			isa = PBXGroup;
 			children = (
@@ -553,7 +546,6 @@
 		B5E80F2D29BDD628004981ED /* EssentialFeediOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				B54A5D4C29CA97C8008AC657 /* Feed Presentation */,
 				B5C4750329C36A8C00FC4B2B /* Feed UI */,
 				B5C474ED29C3351000FC4B2B /* Helpers */,
 			);

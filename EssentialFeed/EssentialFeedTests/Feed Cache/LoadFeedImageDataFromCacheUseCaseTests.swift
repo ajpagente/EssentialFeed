@@ -27,16 +27,16 @@ class LoadFeedImageDataFromCacheUseCaseTests: XCTestCase {
     
     func test_loadImageDataFromURL_failsOnStoreError() {
         let (sut, store) = makeSUT()
-
+        
         expect(sut, toCompleteWith: failed(), when: {
             let retrievalError = anyNSError()
             store.completeRetrieval(with: retrievalError)
         })
     }
-    
+
     func test_loadImageDataFromURL_deliversNotFoundErrorOnNotFound() {
         let (sut, store) = makeSUT()
-
+        
         expect(sut, toCompleteWith: notFound(), when: {
             store.completeRetrieval(with: .none)
         })
@@ -45,7 +45,7 @@ class LoadFeedImageDataFromCacheUseCaseTests: XCTestCase {
     func test_loadImageDataFromURL_deliversStoredDataOnFoundData() {
         let (sut, store) = makeSUT()
         let foundData = anyData()
-
+        
         expect(sut, toCompleteWith: .success(foundData), when: {
             store.completeRetrieval(with: foundData)
         })
@@ -69,16 +69,16 @@ class LoadFeedImageDataFromCacheUseCaseTests: XCTestCase {
     func test_loadImageDataFromURL_doesNotDeliverResultAfterSUTInstanceHasBeenDeallocated() {
         let store = FeedImageDataStoreSpy()
         var sut: LocalFeedImageDataLoader? = LocalFeedImageDataLoader(store: store)
-
+        
         var received = [FeedImageDataLoader.Result]()
         _ = sut?.loadImageData(from: anyURL()) { received.append($0) }
-
+        
         sut = nil
         store.completeRetrieval(with: anyData())
-
+        
         XCTAssertTrue(received.isEmpty, "Expected no received results after instance has been deallocated")
     }
-
+    
     // MARK: - Helpers
     
     private func makeSUT(currentDate: @escaping () -> Date = Date.init, file: StaticString = #file, line: UInt = #line) -> (sut: LocalFeedImageDataLoader, store: FeedImageDataStoreSpy) {
@@ -100,7 +100,7 @@ class LoadFeedImageDataFromCacheUseCaseTests: XCTestCase {
     private func never(file: StaticString = #file, line: UInt = #line) {
         XCTFail("Expected no no invocations", file: file, line: line)
     }
-    
+
     private func expect(_ sut: LocalFeedImageDataLoader, toCompleteWith expectedResult: FeedImageDataLoader.Result, when action: () -> Void, file: StaticString = #file, line: UInt = #line) {
         let exp = expectation(description: "Wait for load completion")
         
@@ -123,4 +123,5 @@ class LoadFeedImageDataFromCacheUseCaseTests: XCTestCase {
         action()
         wait(for: [exp], timeout: 1.0)
     }
+    
 }

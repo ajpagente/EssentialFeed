@@ -7,7 +7,7 @@
 
 ## User settings
 xcuserdata/
-
+project.xcworkspace/
 xcshareddata/
 *.xcuserstate
 

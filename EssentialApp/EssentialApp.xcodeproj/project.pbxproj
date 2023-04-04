@@ -23,6 +23,7 @@
 		B572FC2329D9620D00790782 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B572FC2129D9620D00790782 /* LaunchScreen.storyboard */; };
 		B5C556EA29DAA65B00F25874 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C556E929DAA65B00F25874 /* XCTestCase+MemoryLeakTracking.swift */; };
 		B5C556EC29DAA6C700F25874 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C556EB29DAA6C700F25874 /* SharedTestHelpers.swift */; };
+		B5C556EE29DBD8E500F25874 /* FeedLoaderCacheDecoratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C556ED29DBD8E500F25874 /* FeedLoaderCacheDecoratorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		B572FC2429D9620D00790782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5C556E929DAA65B00F25874 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		B5C556EB29DAA6C700F25874 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
+		B5C556ED29DBD8E500F25874 /* FeedLoaderCacheDecoratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderCacheDecoratorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				B5C556E829DAA64A00F25874 /* Helpers */,
 				B560413829DA8A410046750B /* FeedLoaderWithFallbackCompositeTests.swift */,
 				B560414129DA8E7F0046750B /* FeedImageDataLoaderWithFallbackCompositeTests.swift */,
+				B5C556ED29DBD8E500F25874 /* FeedLoaderCacheDecoratorTests.swift */,
 			);
 			path = EssentialAppTests;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5C556EC29DAA6C700F25874 /* SharedTestHelpers.swift in Sources */,
+				B5C556EE29DBD8E500F25874 /* FeedLoaderCacheDecoratorTests.swift in Sources */,
 				B560414229DA8E7F0046750B /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */,
 				B560413929DA8A410046750B /* FeedLoaderWithFallbackCompositeTests.swift in Sources */,
 				B5C556EA29DAA65B00F25874 /* XCTestCase+MemoryLeakTracking.swift in Sources */,

@@ -50,6 +50,7 @@
 		B5CF436829DFA05400EC1843 /* FeedUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CF436729DFA05400EC1843 /* FeedUIIntegrationTests.swift */; };
 		B5CF436A29DFA53B00EC1843 /* FeedAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CF436929DFA53B00EC1843 /* FeedAcceptanceTests.swift */; };
 		B5CF436C29E0307500EC1843 /* HTTPClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CF436B29E0307500EC1843 /* HTTPClientStub.swift */; };
+		B5CF436E29E030F200EC1843 /* InMemoryFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CF436D29E030F200EC1843 /* InMemoryFeedStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,7 @@
 		B5CF436729DFA05400EC1843 /* FeedUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIIntegrationTests.swift; sourceTree = "<group>"; };
 		B5CF436929DFA53B00EC1843 /* FeedAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAcceptanceTests.swift; sourceTree = "<group>"; };
 		B5CF436B29E0307500EC1843 /* HTTPClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientStub.swift; sourceTree = "<group>"; };
+		B5CF436D29E030F200EC1843 /* InMemoryFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryFeedStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +232,7 @@
 				B5CF435929DFA03100EC1843 /* UIButton+TestHelpers.swift */,
 				B5CF435529DFA03100EC1843 /* UIControl+TestHelpers.swift */,
 				B5CF436B29E0307500EC1843 /* HTTPClientStub.swift */,
+				B5CF436D29E030F200EC1843 /* InMemoryFeedStore.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				B5C556FC29DC6A3900F25874 /* XCTestCase+FeedImageDataLoader.swift in Sources */,
 				B5CF435E29DFA03100EC1843 /* FeedUIIntegrationTests+Localization.swift in Sources */,
 				B5CF436429DFA03100EC1843 /* UIControl+TestHelpers.swift in Sources */,
+				B5CF436E29E030F200EC1843 /* InMemoryFeedStore.swift in Sources */,
 				B5CF436629DFA03100EC1843 /* FeedViewControllerTests+Assertions.swift in Sources */,
 				B5C556EE29DBD8E500F25874 /* FeedLoaderCacheDecoratorTests.swift in Sources */,
 				B5C556FA29DC68FA00F25874 /* FeedImageDataLoaderSpy.swift in Sources */,

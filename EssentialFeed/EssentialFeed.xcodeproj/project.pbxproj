@@ -368,7 +368,6 @@
 				B57EBD2E299D0C9E000F6507 /* EssentialFeedAPIEndToEndTests */,
 				B5F4B0CE29B58ADA00DF6CD3 /* EssentialFeedCacheIntegrationTests */,
 				B5E80F2329BDD628004981ED /* EssentialFeediOS */,
-				B5E80F2D29BDD628004981ED /* EssentialFeediOSTests */,
 				B57EBCF1298BFD99000F6507 /* Products */,
 				B5E80F3A29BF45A8004981ED /* Frameworks */,
 			);
@@ -530,13 +529,6 @@
 				B5C4750229C36A4400FC4B2B /* Feed UI */,
 			);
 			path = EssentialFeediOS;
-			sourceTree = "<group>";
-		};
-		B5E80F2D29BDD628004981ED /* EssentialFeediOSTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = EssentialFeediOSTests;
 			sourceTree = "<group>";
 		};
 		B5E80F3A29BF45A8004981ED /* Frameworks */ = {

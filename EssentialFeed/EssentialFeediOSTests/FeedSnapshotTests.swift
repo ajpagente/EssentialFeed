@@ -7,6 +7,7 @@
 
 import XCTest
 import EssentialFeediOS
+@testable import EssentialFeed
 
 class FeedSnapshotTests: XCTestCase {
 
@@ -25,6 +26,14 @@ class FeedSnapshotTests: XCTestCase {
 
         record(snapshot: sut.snapshot(), named: "FEED_WITH_ERROR_MESSAGE")
     }
+    
+    func test_feedWithFailedImageLoading() {
+        let sut = makeSUT()
+
+        sut.display(feedWithFailedImageLoading())
+
+        record(snapshot: sut.snapshot(), named: "FEED_WITH_FAILED_IMAGE_LOADING")
+    }
 
     // MARK: - Helpers
     private func makeSUT() -> FeedViewController {
@@ -37,6 +46,21 @@ class FeedSnapshotTests: XCTestCase {
 
     private func emptyFeed() -> [FeedImageCellController] {
         return []
+    }
+    
+    private func feedWithFailedImageLoading() -> [ImageStub] {
+        return [
+            ImageStub(
+                description: nil,
+                location: "Cannon Street, London",
+                image: nil
+            ),
+            ImageStub(
+                description: nil,
+                location: "Brighton Seafront",
+                image: nil
+            )
+        ]
     }
 
     private func record(snapshot: UIImage, named name: String, file: StaticString = #file, line: UInt = #line) {
@@ -71,4 +95,36 @@ extension UIViewController {
             view.layer.render(in: action.cgContext)
         }
     }
+}
+
+private extension FeedViewController {
+    func display(_ stubs: [ImageStub]) {
+        let cells: [FeedImageCellController] = stubs.map { stub in
+            let cellController = FeedImageCellController(delegate: stub)
+            stub.controller = cellController
+            return cellController
+        }
+
+        display(cells)
+    }
+}
+
+private class ImageStub: FeedImageCellControllerDelegate {
+    let viewModel: FeedImageViewModel<UIImage>
+    weak var controller: FeedImageCellController?
+
+    init(description: String?, location: String?, image: UIImage?) {
+        viewModel = FeedImageViewModel(
+            description: description,
+            location: location,
+            image: image,
+            isLoading: false,
+            shouldRetry: image == nil)
+    }
+
+    func didRequestImage() {
+        controller?.display(viewModel)
+    }
+
+    func didCancelImageRequest() {}
 }

@@ -109,12 +109,12 @@
 			remoteGlobalIDString = B57EBCEF298BFD99000F6507;
 			remoteInfo = EssentialFeed;
 		};
-		B5CF437D29E1102600EC1843 /* PBXContainerItemProxy */ = {
+		B5CF438D29E2F3F800EC1843 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B57EBCE7298BFD99000F6507 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B57EBCEF298BFD99000F6507;
-			remoteInfo = EssentialFeed;
+			remoteGlobalIDString = B5E80F2129BDD628004981ED;
+			remoteInfo = EssentialFeediOS;
 		};
 		B5F4B0D229B58ADA00DF6CD3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -661,7 +661,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				B5CF437E29E1102600EC1843 /* PBXTargetDependency */,
+				B5CF438E29E2F3F800EC1843 /* PBXTargetDependency */,
 			);
 			name = EssentialFeediOSTests;
 			productName = EssentialFeediOSTests;
@@ -942,11 +942,10 @@
 			target = B57EBCEF298BFD99000F6507 /* EssentialFeed */;
 			targetProxy = B57EBD32299D0C9E000F6507 /* PBXContainerItemProxy */;
 		};
-		B5CF437E29E1102600EC1843 /* PBXTargetDependency */ = {
+		B5CF438E29E2F3F800EC1843 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			platformFilter = ios;
-			target = B57EBCEF298BFD99000F6507 /* EssentialFeed */;
-			targetProxy = B5CF437D29E1102600EC1843 /* PBXContainerItemProxy */;
+			target = B5E80F2129BDD628004981ED /* EssentialFeediOS */;
+			targetProxy = B5CF438D29E2F3F800EC1843 /* PBXContainerItemProxy */;
 		};
 		B5F4B0D329B58ADA00DF6CD3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

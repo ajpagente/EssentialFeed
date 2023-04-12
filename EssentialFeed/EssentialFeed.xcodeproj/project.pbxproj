@@ -399,6 +399,7 @@
 		B57EBCF2298BFD99000F6507 /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
+				B5CF43A129E6942000EC1843 /* Image Comments API */,
 				B5CF439B29E692D100EC1843 /* Shared API */,
 				B5CF439C29E692E000EC1843 /* Share API Infra */,
 				B5CF439729E6661600EC1843 /* Image Comments Feature */,
@@ -413,6 +414,7 @@
 		B57EBCFC298BFD99000F6507 /* EssentialFeedTests */ = {
 			isa = PBXGroup;
 			children = (
+				B5CF43A229E6948300EC1843 /* Image Comments API */,
 				B5CF439F29E6932B00EC1843 /* Shared API Infra */,
 				B5CF439D29E6931B00EC1843 /* Shared API */,
 				B57A92D729D1CD1200D3F23F /* Feed Presentation */,
@@ -443,8 +445,6 @@
 				B57EBD1D29938170000F6507 /* FeedItemsMapper.swift */,
 				B5465BAB29A7939300DAD1F7 /* RemoteFeedItem.swift */,
 				B572FBEE29D5687B00790782 /* RemoteFeedImageDataLoader.swift */,
-				B5CF439129E663B900EC1843 /* ImageCommentsMapper.swift */,
-				B5CF439329E663E400EC1843 /* RemoteImageCommentsLoader.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -454,7 +454,6 @@
 			children = (
 				B57EBD0D298C8913000F6507 /* LoadFeedFromRemoteUseCaseTests.swift */,
 				B572FBE929D475DB00790782 /* LoadFeedImageDataFromRemoteUseCaseTests.swift */,
-				B5CF439529E6646700EC1843 /* LoadImageCommentsFromRemoteUseCaseTests.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -611,6 +610,23 @@
 				B572FBF329D59D4600790782 /* URLProtocolStub.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B5CF43A129E6942000EC1843 /* Image Comments API */ = {
+			isa = PBXGroup;
+			children = (
+				B5CF439129E663B900EC1843 /* ImageCommentsMapper.swift */,
+				B5CF439329E663E400EC1843 /* RemoteImageCommentsLoader.swift */,
+			);
+			path = "Image Comments API";
+			sourceTree = "<group>";
+		};
+		B5CF43A229E6948300EC1843 /* Image Comments API */ = {
+			isa = PBXGroup;
+			children = (
+				B5CF439529E6646700EC1843 /* LoadImageCommentsFromRemoteUseCaseTests.swift */,
+			);
+			path = "Image Comments API";
 			sourceTree = "<group>";
 		};
 		B5E80F2329BDD628004981ED /* EssentialFeediOS */ = {

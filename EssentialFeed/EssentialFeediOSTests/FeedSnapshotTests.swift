@@ -114,6 +114,7 @@ private class ImageStub: FeedImageCellControllerDelegate {
         self.viewModel = FeedImageViewModel(
             description: description,
             location: location)
+        self.image = image
     }
     
     func didRequestImage() {

@@ -46,7 +46,7 @@
 		B572FBFD29D66AFB00790782 /* FeedImageDataStoreSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572FBFC29D66AFB00790782 /* FeedImageDataStoreSpy.swift */; };
 		B572FBFF29D66BEF00790782 /* CacheFeedImageDataUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572FBFE29D66BEF00790782 /* CacheFeedImageDataUseCaseTests.swift */; };
 		B572FC0129D85CC500790782 /* CoreDataFeedImageDataStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572FC0029D85CC500790782 /* CoreDataFeedImageDataStoreTests.swift */; };
-		B572FC0729D86FC400790782 /* CoreDataFeedStore+FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572FC0629D86FC400790782 /* CoreDataFeedStore+FeedImageDataLoader.swift */; };
+		B572FC0729D86FC400790782 /* CoreDataFeedStore+FeedImageDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572FC0629D86FC400790782 /* CoreDataFeedStore+FeedImageDataStore.swift */; };
 		B572FC0929D8767500790782 /* CoreDataFeedStore+FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572FC0829D8767500790782 /* CoreDataFeedStore+FeedStore.swift */; };
 		B57A92D929D1CD2C00D3F23F /* FeedPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A92D829D1CD2C00D3F23F /* FeedPresenterTests.swift */; };
 		B57A92E329D2B13E00D3F23F /* FeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57A92E229D2B13E00D3F23F /* FeedPresenter.swift */; };
@@ -206,7 +206,7 @@
 		B572FBFE29D66BEF00790782 /* CacheFeedImageDataUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedImageDataUseCaseTests.swift; sourceTree = "<group>"; };
 		B572FC0029D85CC500790782 /* CoreDataFeedImageDataStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFeedImageDataStoreTests.swift; sourceTree = "<group>"; };
 		B572FC0529D86AE200790782 /* FeedStore2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FeedStore2.xcdatamodel; sourceTree = "<group>"; };
-		B572FC0629D86FC400790782 /* CoreDataFeedStore+FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataFeedStore+FeedImageDataLoader.swift"; sourceTree = "<group>"; };
+		B572FC0629D86FC400790782 /* CoreDataFeedStore+FeedImageDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataFeedStore+FeedImageDataStore.swift"; sourceTree = "<group>"; };
 		B572FC0829D8767500790782 /* CoreDataFeedStore+FeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataFeedStore+FeedStore.swift"; sourceTree = "<group>"; };
 		B57A92D829D1CD2C00D3F23F /* FeedPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenterTests.swift; sourceTree = "<group>"; };
 		B57A92DD29D1DCD100D3F23F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Feed.strings; sourceTree = "<group>"; };
@@ -643,7 +643,7 @@
 				B5CB232E29B495C5002044C5 /* CoreDataHelpers.swift */,
 				B5CB233029B49669002044C5 /* ManagedCache.swift */,
 				B5CB233229B49671002044C5 /* ManagedFeedImage.swift */,
-				B572FC0629D86FC400790782 /* CoreDataFeedStore+FeedImageDataLoader.swift */,
+				B572FC0629D86FC400790782 /* CoreDataFeedStore+FeedImageDataStore.swift */,
 				B572FC0829D8767500790782 /* CoreDataFeedStore+FeedStore.swift */,
 			);
 			path = CoreData;
@@ -1167,7 +1167,7 @@
 				B572FBF929D5B71400790782 /* FeedImageDataStore.swift in Sources */,
 				B572FBF229D56E9200790782 /* HTTPURLResponse+StatusCode.swift in Sources */,
 				B5C556F429DBDE4500F25874 /* FeedCache.swift in Sources */,
-				B572FC0729D86FC400790782 /* CoreDataFeedStore+FeedImageDataLoader.swift in Sources */,
+				B572FC0729D86FC400790782 /* CoreDataFeedStore+FeedImageDataStore.swift in Sources */,
 				B5650C7129B0456A00CF391E /* CodableFeedStore.swift in Sources */,
 				B5CF43C529EACB5E00EC1843 /* ResourceErrorViewModel.swift in Sources */,
 				B57EBD1C29938074000F6507 /* HTTPClient.swift in Sources */,

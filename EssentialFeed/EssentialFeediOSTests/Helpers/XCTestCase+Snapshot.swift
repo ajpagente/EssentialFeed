@@ -22,9 +22,13 @@ extension XCTestCase {
             let temporarySnapshotURL = URL(fileURLWithPath: NSTemporaryDirectory(), isDirectory: true)
                 .appendingPathComponent(snapshotURL.lastPathComponent)
 
+            let homeDirectorySnapshotURL = URL(fileURLWithPath: NSHomeDirectory(), isDirectory: true).appendingPathComponent(snapshotURL.lastPathComponent)
+            
             try? snapshotData?.write(to: temporarySnapshotURL)
+            try? snapshotData?.write(to: homeDirectorySnapshotURL)
+            
 
-            XCTFail("New snapshot does not match stored snapshot. New snapshot URL: \(temporarySnapshotURL), Stored snapshot URL: \(snapshotURL)", file: file, line: line)
+            XCTFail("New snapshot does not match stored snapshot. New snapshot URL: \(temporarySnapshotURL), Stored snapshot URL: \(snapshotURL) Home snapshot URL: \(homeDirectorySnapshotURL)", file: file, line: line)
         }
     }
 

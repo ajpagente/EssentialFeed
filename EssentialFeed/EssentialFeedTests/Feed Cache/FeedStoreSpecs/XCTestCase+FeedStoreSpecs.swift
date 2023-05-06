@@ -43,9 +43,9 @@ extension FeedStoreSpecs where Self: XCTestCase {
     
     func assertThatInsertDeliversNoErrorOnNonEmptyCache(on sut: FeedStore, file: StaticString = #file, line: UInt = #line) {
         insert((uniqueImageFeed().local, Date()), to: sut)
-
+        
         let insertionError = insert((uniqueImageFeed().local, Date()), to: sut)
-
+        
         XCTAssertNil(insertionError, "Expected cache insertion to fail on error", file: file, line: line)
     }
     
@@ -67,7 +67,7 @@ extension FeedStoreSpecs where Self: XCTestCase {
     
     func assertThatDeleteHasNoSideEffectsOnEmptyCache(on sut: FeedStore, file: StaticString = #file, line: UInt = #line) {
         deleteCache(from: sut)
-         
+        
         expect(sut, toRetrieve: .success(.none), file: file, line: line)
     }
     
@@ -107,12 +107,12 @@ extension FeedStoreSpecs where Self: XCTestCase {
         }
     }
     
-    func expect(_ sut: FeedStore, toRetrieveTwice expectedResult: FeedStore.RetrievalResult,  file: StaticString = #file, line: UInt = #line) {
+    func expect(_ sut: FeedStore, toRetrieveTwice expectedResult: Result<CachedFeed?, Error>, file: StaticString = #filePath, line: UInt = #line) {
         expect(sut, toRetrieve: expectedResult, file: file, line: line)
         expect(sut, toRetrieve: expectedResult, file: file, line: line)
     }
     
-    func expect(_ sut: FeedStore, toRetrieve expectedResult: FeedStore.RetrievalResult, file: StaticString = #filePath, line: UInt = #line) {
+    func expect(_ sut: FeedStore, toRetrieve expectedResult: Result<CachedFeed?, Error>, file: StaticString = #filePath, line: UInt = #line) {
         let retrievedResult = Result { try sut.retrieve() }
         
         switch (expectedResult, retrievedResult) {

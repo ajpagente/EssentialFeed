@@ -8,6 +8,8 @@
 import Foundation
 import EssentialFeed
 
+class NullStore {}
+
 extension NullStore: FeedStore {
     func deleteCachedFeed(completion: @escaping DeletionCompletion) {
         completion(.success(()))
